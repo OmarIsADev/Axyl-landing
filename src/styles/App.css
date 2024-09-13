@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button-primary {
+    @apply h-full rounded-none border-none bg-[var(--foreground)] px-20 py-6 font-bold text-black;
+  }
+
+  .button-link {
+    @apply relative cursor-pointer text-[16px] font-medium leading-6 text-[var(--text)] after:absolute after:-bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[var(--foreground)] after:transition-[width_500ms_ease] hover:after:w-full;
+  }
+}

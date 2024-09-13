@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --background: #090909;
+  --foreground: #fff;
+  --transparent-background: #00000040;
+  --text: #fff;
+  --light-text: #b8b8b8;
+  --border: #4e4e4e;
+  --gradient-background: linear-gradient(
+    0deg,
+    #090909 0%,
+    rgba(111, 111, 111, 0) 95.43%
+  );
+  --gradient-text: linear-gradient(265deg, #019d5d 1.53%, #006c98 98.16%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+  background: var(--background);
+}
+
+section {
+  padding: 64px 36px;
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
