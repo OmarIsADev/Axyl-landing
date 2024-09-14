@@ -4,7 +4,7 @@
 
 @layer components {
   .button-primary {
-    @apply h-full rounded-none border-none bg-[var(--foreground)] px-20 py-6 font-bold text-black;
+    @apply h-full cursor-pointer rounded-none border-none bg-[var(--foreground)] px-20 py-6 font-bold text-black;
   }
 
   .button-link {

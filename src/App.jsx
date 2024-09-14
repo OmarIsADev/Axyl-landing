@@ -149,7 +149,7 @@ function App() {
           header: "lg:!text-start lg:!items-start",
         }}
       >
-        <div className="flex w-full gap-6">
+        <div className="flex w-full gap-6 flex-wrap">
           <Card
             title="GitHub"
             description="A tiling window manager that represents a full binary tree."
@@ -199,17 +199,34 @@ function App() {
         <h1 className="text-2xl font-bold text-[var(--text)]">
           Our Supporters
         </h1>
-        <div className="flex w-full gap-9 justify-center">
-          <img src={arco} alt="arco" className="grayscale hover:grayscale-0 transition duration-700 h-24 w-fit" />
-          <img src={foss} alt="foss" className="grayscale hover:grayscale-0 transition duration-700 h-24 w-fit" />
-          <img src={aarch} alt="aarch" className="grayscale hover:grayscale-0 transition duration-700 h-24 w-fit" />
+        <div className="flex w-full justify-center gap-9 flex-wrap">
+          <img
+            src={arco}
+            alt="arco"
+            className="h-full max-h-24 w-fit grayscale transition duration-700 hover:grayscale-0 object-contain"
+          />
+          <img
+            src={foss}
+            alt="foss"
+            className="h-full max-h-24 w-fit grayscale transition duration-700 hover:grayscale-0 object-contain"
+          />
+          <img
+            src={aarch}
+            alt="aarch"
+            className="h-full max-h-24 w-fit grayscale transition duration-700 hover:grayscale-0 object-contain"
+          />
         </div>
       </section>
 
-      <section className="p-9 border-t mb-64 border-b border-[var(--border)] items-center justify-center flex flex-col gap-9">
+      <section className="mb-64 flex flex-col items-center justify-center gap-9 border-b border-t border-[var(--border)] p-9">
         <div>
-        <h1 className="text-2xl font-bold text-[var(--text)]">Want to boost your workflow?</h1>
-        <p className="text-center text-pretty text-[var(--light-text)] max-w-md">Join the thousand people who have downloaded Axyl. Try it now in a live ISO - no need to install.</p>
+          <h1 className="text-2xl font-bold text-[var(--text)]">
+            Want to boost your workflow?
+          </h1>
+          <p className="max-w-md text-pretty text-center text-[var(--light-text)]">
+            Join the thousand people who have downloaded Axyl. Try it now in a
+            live ISO - no need to install.
+          </p>
         </div>
         <button className="button-primary h-fit px-8 py-4">Download Now</button>
       </section>
