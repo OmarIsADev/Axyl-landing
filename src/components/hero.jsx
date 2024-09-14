@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="flex h-dvh w-full flex-col gap-4 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat px-9 pt-[calc(72px+36px)] lg:flex-row lg:pr-0 xl:justify-around">
+    <section className="flex h-vh h-dvh w-full flex-col gap-4 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat px-9 pt-[calc(72px+36px)] lg:flex-row lg:pr-0 xl:justify-around">
       {/* header */}
       <div className="flex w-full max-w-[500px] flex-col items-start gap-8">
         <h1 className="text-6xl font-bold uppercase text-[var(--text)] lg:text-8xl">

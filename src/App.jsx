@@ -8,7 +8,13 @@ import Section from "./components/section";
 import tilingWindows from "/svgs/tilingWindows.svg";
 import minimalBase from "/svgs/minimalBase.svg";
 import solidSoftware from "/svgs/solidSoftware.svg";
+import arch from "/svgs/archlinux.svg";
+import hyprland from "/svgs/hyprland.svg";
+import cachyos from "/svgs/cachyOS.svg";
+import ublue from "/ublue.png";
+import terminal from "/svgs/terminal.svg";
 
+const svgsClassName = "absolute -bottom-5 -left-5 rotate-[-20deg] h-24 w-24 grayscale"
 
 function App() {
   const infoCards = [
@@ -54,31 +60,31 @@ function App() {
       title: "Hyprland",
       description: "Axyl focuses fully on tiling WMs, so we can give you the best experience for advanced users.",
       bg: "#2E3440",
-      children: null
+      children: <img className={svgsClassName} alt="hyprland" src={hyprland} />
     },
     {
       title: "Arch Linux tweak tool",
       description: "A versatile and powerful tool for customizing Arch-based systems with ease!",
       bg: "#1A1B26",
-      children: null
+      children: <img className={svgsClassName} alt="archlinux" src={arch} />
     },
     {
-      title: "CachyOS-Kernal",
+      title: "CachyOS-Kernel",
       description: "CachyOS-Kernal is a lightweight and modular kernel for Arch based systems.",
       bg: "#1E222A",
-      children: null
+      children: <img className={svgsClassName} alt="CachyOS-Kernel" src={cachyos} />
     },
-    // {
-    //   title: "Extended repositories",
-    //   description: "lorem",
-    //   bg: "#222526",
-    //   children: null
-    // },
     {
       title: "Yafti",
       description: "Responsible for installing Flatpaks on first boot after a user finishes installation. It is intended as a replacement for custom zenity dialogs.",
       bg: "#222526",
-      children: null
+      children: <img className={svgsClassName} alt="Yafti" src={ublue} />
+    },
+    {
+      title: "AGS",
+      description: "AGS allows defining GTK widgets in declarative way, It also provides services and other utilities to interact with the system to make widgets more functional and user-friendly.",
+      bg: "#1A1B26",
+      children: <img className={svgsClassName} alt="AGS" src={terminal} />
     }
   ]
   

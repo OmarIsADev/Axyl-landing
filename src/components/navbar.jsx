@@ -13,8 +13,9 @@ export default function Navbar() {
       </div>
       {/* links */}
       <div className="hidden w-1/3 items-center justify-center gap-4 lg:flex">
-        <a className="button-link">Discord</a>
-        <a className="button-link">GitHub</a>
+        <a className="button-link" href={import.meta.env.VITE_DISCORD_LINK}>Discord</a>
+        <a className="button-link" href={import.meta.env.VITE_GITHUB_LINK}>GitHub</a>
+        <a className="button-link" href={import.meta.env.VITE_REDDIT_LINK}>Reddit</a>
       </div>
       {/* download button */}
       <div className="hidden w-1/3 justify-end lg:flex">

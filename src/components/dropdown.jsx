@@ -28,10 +28,19 @@ export default function Dropdown() {
         className={`fixed left-0 top-[72px] z-[100] flex w-full flex-col gap-4 overflow-hidden bg-[var(--background)] p-9 backdrop-blur-lg ${isMenuOpen ? "h-screen" : "h-0 !p-0"} transition-all duration-700`}
       >
         <li>
-          <a className="button-link">Discord</a>
+          <a className="button-link" href={import.meta.env.VITE_DISCORD_LINK}>
+            Discord
+          </a>
         </li>
         <li>
-          <a className="button-link">GitHub</a>
+          <a className="button-link" href={import.meta.env.VITE_GITHUB_LINK}>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a className="button-link" href={import.meta.env.VITE_REDDIT_LINK}>
+            Reddit
+          </a>
         </li>
         <li>
           <button className="button-primary">Download</button>
