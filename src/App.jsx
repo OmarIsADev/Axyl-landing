@@ -155,7 +155,7 @@ function App() {
             description="A tiling window manager that represents a full binary tree."
           >
             <a
-              href={import.meta.env.VITE_GITHUB}
+              href={import.meta.env.VITE_GITHUB_LINK}
               className="button-primary h-fit px-8 py-4"
             >
               Check out our repo
@@ -176,7 +176,7 @@ function App() {
             description="Axyl focuses fully on tiling WMs, so we can give you the best experience for advanced users."
           >
             <a
-              href={import.meta.env.VITE_DISCORD}
+              href={import.meta.env.VITE_DISCORD_LINK}
               className="button-primary h-fit px-8 py-4"
             >
               Discord community
