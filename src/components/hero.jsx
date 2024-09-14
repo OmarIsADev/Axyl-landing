@@ -1,3 +1,5 @@
+import monitor from "/monitor.png";
+
 export default function Hero() {
   return (
     <section className="flex h-vh h-dvh w-full flex-col gap-4 overflow-hidden bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat px-9 pt-[calc(72px+36px)] lg:flex-row lg:pr-0 xl:justify-around">
@@ -23,7 +25,7 @@ export default function Hero() {
 
       {/* hero image */}
       <img
-        src="/monitor.png"
+        src={monitor}
         className="relative bottom-0 left-0 object-cover object-left lg:h-[calc(100dvh-72px-36px)]"
         alt="hero image"
       />
