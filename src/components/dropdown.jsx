@@ -2,14 +2,20 @@ import { useEffect, useState } from "react";
 
 export default function Dropdown() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindow] = useState(0);
 
   useEffect(() => {
-    if (isMenuOpen) {
+    if(typeof window !== "undefined") window.addEventListener("resize", () => setWindow(window.innerWidth));
+  }, [window]);
+
+  useEffect(() => {
+    if (isMenuOpen && windowWidth < 1024) {
+      console.log(windowWidth);
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [isMenuOpen]);
+  }, [isMenuOpen, windowWidth]);
 
   return (
     <div className="relative lg:hidden">
